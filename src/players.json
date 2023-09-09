@@ -1,0 +1,36 @@
+{
+  "female": [
+    {
+      "id": 1,
+      "name": "Paula Josemaría",
+      "ranking": 1,
+      "points": 21200,
+      "position": "Derecha",
+      "image": "https://worldpadeltour.com/assets/themes/worldpadeltour.com/img/dynamic_jugadores_foto_4_267/a0355660be.webp"
+    },
+    {
+      "id": 2,
+      "name": "Ariana Sánchez",
+      "ranking": 1,
+      "points": 21200,
+      "position": "Revés",
+      "image": "https://worldpadeltour.com/assets/themes/worldpadeltour.com/img/dynamic_jugadores_foto_4_267/e82db2dbcb.webp"
+    },
+    {
+      "id": 3,
+      "name": "Gemma Triay",
+      "ranking": 3,
+      "points": 17290,
+      "position": "Revés",
+      "image": "https://worldpadeltour.com/assets/themes/worldpadeltour.com/img/dynamic_jugadores_foto_4_267/02c7959870.webp"
+    },
+    {
+      "id": 4,
+      "name": "Alejandra Sánchez",
+      "ranking": 4,
+      "points": 14770,
+      "position": "Derecha",
+      "image": "https://worldpadeltour.com/assets/themes/worldpadeltour.com/img/dynamic_jugadores_foto_4_267/e1fa99dcf9.webp"
+    }
+  ]
+}
