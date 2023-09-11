@@ -1,15 +1,22 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { BarLoader } from 'react-spinners';
+import { todoList } from '../../services/todos-service';
+import { Link } from 'react-router-dom';
 
 const ToDos = () => {
   const [todos, setTodos] = useState([]);
-  const [loading, setLoading] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://jsonplaceholder.typicode.com/todos')
-      .then((response) => {
-        setTodos(response.data);
+    todoList()
+      .then((todos) => {
+        setTodos(todos);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
         setLoading(false);
       })
   }, [])
@@ -23,7 +30,10 @@ const ToDos = () => {
       ) : (
         <div>
           {todos.map((todo) => (
-            <pre key={todo.id}>{JSON.stringify(todo)}</pre>
+            <div key={todo.id}>
+              <h3>{todo.title}</h3>
+              <Link to={`/todos/${todo.id}`}>Ver detalle</Link>
+            </div>
           ))}
         </div>
       )}
